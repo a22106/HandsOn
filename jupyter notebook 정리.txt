@@ -1,0 +1,79 @@
+Markdown 정리
+1. 헤더 #
+
+2. 인용 >
+
+3. List(목록, level) 
+1. 2. 3.
+*, +, -
+들여쓰기: 띄어쓰기 or tab
+
+4. 수평선
+***, ---, <hr>
+
+5. 줄바꿈
+space 2번, <br>
+
+6. Font
+- 색
+<span style = ""> 내용 </span>
+<span style = "color:(red, blue, #F8766D"> 내용 </span>
+- 글자크기 px, %, em단위
+<p style = "font-size:20:px">20px</p>
+<p style = "font-size:50:px; line-height:1em">50px</p> #줄높이 설정
+- 굵게
+<p style = "font-weight:bold">html 문법으로 굵게 표시 가능</p>
+- 기울임
+<p style = "font-style:italic">html 문법으로 기울임 표시</p>
+- 글꼴
+<span style = "font-family: arial">arial font</span>
+- 한번에 적용
+<span style = "font-style: italic; font-weight: bold; font-size: 1.5em;
+line-height: 1.0em; color; 0range; font-family: arial;">모두 적용</span>
+
+7. Link
+(1) https://www.주소.com/
+(2) [홈페이지 제목](https://leadakyeong.tistory.com/)
+(3) 홈페이지 주소는 [이 주소][1]로 들어가면 된다. [구글][2]을 통해서도 들어갈 수 있다.
+[1]:https://www.이 주소.com/
+[2]:https://www.google.com/
+
+8. 이미지
+문법: ![이미지 이름](이미지 주소)
+![sk_logo](https://upload.wikimedia.org/wikipedia/commons/b/b4/SK_logo.svg)
+이미지 크기 조절
+<img src="이미지 주소" width = "" height = "" alt = ""></img>
+<img src="https://www.이미지 주소/" width="450px" height="300px" title="제목" alt="alt"></img><br/>
+
+9. Table
+|로 뼈대, -- 내용 구분
+**로 둘러 싸 bold 표현, *로 기울임 표현
+|First Header   |Second Header  |Third Header       |
+|-------------  |---------------|-------------      |
+|First row      |Data           |Very long data entry|
+|Second row     |**Cell**       |*Cell*             |
+|Third row      |Cell that spans across two colums  ||
+
+10. Code
+'language'
+
+11. Tex수학식
+$: 왼쪽 정렬된 결과
+$$: 가운데 정렬되고 오른쪽에 숫자 카운팅
+$y = 3x$
+$$\sqrt[3]{x^3+y^3 \over 2}$$
+
+** 단축키
+(Command Mode)
+shift-Enter: run cell, selet below
+Ctrl-Enter: run cell
+Alt-Enter: run cell, insert below
+Y: to Code
+M: to Markdown
+B: insert cell below
+
+Shift-V: paste cell above
+Shift-M: Merge cell below
+Shift - Tab: 툴팁 표시
+Ctrl - ]: indent
+Ctrl - Shift: split cell
